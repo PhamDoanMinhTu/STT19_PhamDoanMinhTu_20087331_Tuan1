@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coding Chanllenge 8</h1>
+    <script>
+        const  bill = [ 22, 295, 176, 440, 37, 105, 10, 1100, 86 , 52];
+        function calcTip(bill) {
+            return bill >= 50 && bill <= 300 ? bill * 15/100 : bill * 20/100;
+            }  
+        const tips = bill.map(calcTip);
+        console.log("Tiền tip :",tips)
+        const totals = bill.map((price,index) => {return price + tips[index]});
+        console.log("Tổng Hóa Đơn:",totals);
+
+        function calcAverage (arr){
+            let sum = 0 ;
+            for (let i = 0 ; i< arr.length ; i++){
+                    sum += arr[i];
+            }
+            return sum;
+        }
+        console.log(calcAverage(totals)); 
+
+    </script>
+</body>
+</html>

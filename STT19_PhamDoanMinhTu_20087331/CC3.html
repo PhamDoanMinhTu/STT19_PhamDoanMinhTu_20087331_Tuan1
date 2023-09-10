@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coding Challenge 3</h1>
+    <script>
+        const dolphinScore = [97,112,101];
+        const koalaScore  = [109,95,123];
+
+        let sumDolphin = 0;
+        dolphinScore.forEach(element => {
+            sumDolphin  += element
+        });
+
+
+        let sumKoala = 0;
+        koalaScore.forEach(element => {
+            sumKoala  += element
+        });
+
+        const avgSumdolphin = sumDolphin /(dolphinScore.length);
+        const avgSumkoala = sumKoala /(koalaScore.length);
+
+        console.log("Điểm của đội DolPhin là " , avgSumdolphin);
+        console.log("Điểm của đội Koala là " , avgSumkoala);
+
+
+        if (avgSumdolphin >= 100 && avgSumkoala >= 100 ){
+            if (avgSumdolphin > avgSumkoala){
+                console.log("Đội DolPhin Thắng ");
+            }
+            else if (avgSumdolphin < avgSumkoala){
+                console.log("Đội Koala thắng ");
+            }
+            else {
+                console.log("Cả 2 đội hòa");
+            }
+        }
+        
+        
+
+    </script>
+</body>
+</html>

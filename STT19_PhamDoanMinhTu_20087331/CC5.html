@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dtb = (a, b, c) => (a+b+c) / 3;
+
+        // Data 1
+        var Dolphins1 = dtb(44, 23, 71);
+        var Koalas1 = dtb(65, 54, 49);
+        // Data 2
+        var Dolphins2 = dtb(85, 54, 41);
+        var Koalas2 = dtb(23, 34, 27);
+
+
+        var checkWinner = (Dolphins, Koalas) => {
+            if (Dolphins >= 2 * Koalas) {
+                console.log(`Đội Dolphins thắng (${Dolphins} điểm so với ${Koalas} điểm)`);
+            } else if (Koalas >= 2 * Dolphins) {
+                console.log(`Đội Koala thắng (${Koalas} điểm so với ${Dolphins} điểm)`);
+            } else {
+                console.log('Không đội nào thắng');
+            }
+        };
+
+        console.log("Trường hợp 1: "); 
+        checkWinner(Dolphins1, Koalas1); 
+        console.log("Trường hợp 2: "); 
+        checkWinner(Dolphins2, Koalas2);
+    </script>
+</body>
+</html>

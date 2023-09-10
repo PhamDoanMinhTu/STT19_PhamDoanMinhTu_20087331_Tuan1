@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Coding Challenge 2</h1>
+    <script>      
+        const bmi = (mass, height) => {
+               return mass / (height ** 2);
+           }
+   
+        const MarkBMI = bmi(78, 1.69);
+        const JohnBMI = bmi(92, 1.95);
+           
+
+        console.log("BMI của Mark là : " , MarkBMI);
+        console.log("BMI của John là : " , JohnBMI);
+   
+        const MarkHigherBMI = MarkBMI > JohnBMI;
+   
+           if (MarkHigherBMI) {
+               console.log("BMI của Mark cao hơn John");
+           } else {
+               console.log("BMI của John cao hơn Mark");
+           }
+         
+   
+       </script>
+</body>
+</html>
